@@ -1,0 +1,16 @@
+.logo_container{
+    background-color: blue;
+}
+
+.logo_image{
+    width: 53px;
+    height: 58px;
+}
+
+.logo_text{
+    color: white;
+}
+
+.logo_text span{
+    color: red;
+}
