@@ -1,5 +1,19 @@
-.logo_container{
+/* Remove padding and margin from all elements */
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.navbar{
     background-color: blue;
+    display: flex;
+}
+
+
+.logo_container{
+    width: fit-content;
+    text-align: center;
 }
 
 .logo_image{
@@ -9,8 +23,35 @@
 
 .logo_text{
     color: white;
+    font-weight: 900;
+    font-size: 18px;
+   
 }
 
 .logo_text span{
     color: red;
+}
+
+.nav_links{
+    display: flex;
+    font-weight: 700;
+    font-size: 16px;
+    gap: 26px;
+}
+
+.nav_links a, .login a, .register a{
+    color : white;
+    text-decoration: none;
+}
+
+.login a{
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 9px 33px 9px 33px;
+}
+
+.register a{
+    border-radius: 5px;
+    background-color: red;
+    padding: 10px 23px 10px 23px;
 }
