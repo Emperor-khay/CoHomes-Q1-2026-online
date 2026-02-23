@@ -6,8 +6,10 @@
 }
 
 .navbar{
-    background-color: blue;
+    /* background-color: black; */
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 
@@ -29,7 +31,7 @@
 }
 
 .logo_text span{
-    color: red;
+    color: #d32323;
 }
 
 .nav_links{
@@ -52,6 +54,16 @@
 
 .register a{
     border-radius: 5px;
-    background-color: red;
+    background-color: #d32323;
     padding: 10px 23px 10px 23px;
+}
+
+.action_buttons{
+    display: flex;
+    gap: 25px;
+}
+
+body{
+    background-image: url(./images/hero_bg.png);
+    /* backgrou/nd-color: #d32323; */
 }
