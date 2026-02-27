@@ -8,8 +8,12 @@
 .navbar{
     /* background-color: black; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin: 0px 57px;
+    padding-top: 15px;
+    z-index: 20;
+    position: relative;
 }
 
 
@@ -64,10 +68,23 @@
 }
     
 .fake-body{
-    /* background-image: url(./images/hero_bg.png); */
+    background-image: url(./images/hero_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: green;
+    position: relative;
+    z-index: 0;
+    /* background-color: rgb(21, 31, 104) */
+}
+
+.overlay{
+    position: absolute;
+    background-color: black;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    opacity: 45%;
 }
 
 .hero_text{
@@ -95,6 +112,9 @@
 
 .hero{
     margin-top: 110px;
+    margin-left: 57px;
+    position: relative;
+    z-index: 20;
 }
 
 .rent{
@@ -122,6 +142,8 @@
     display: flex;
     justify-content: center;
     margin-top: 46px;
+    z-index: 20;
+    position: relative;
 }
 
 .search_heading{
@@ -143,7 +165,9 @@
     align-items: center ;
     width: 80%;
     border-radius: 10px;
-    margin: 0px auto;
+    margin: 0px auto -100px;
+    z-index: 20;
+    position: relative;
 }
 
 .search{
