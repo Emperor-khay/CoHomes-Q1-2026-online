@@ -165,7 +165,8 @@
     align-items: center ;
     width: 80%;
     border-radius: 10px;
-    margin: 0px auto -100px;
+    margin: 0px 0px -100px;
+    justify-self: center;
     z-index: 20;
     position: relative;
 }
@@ -174,4 +175,113 @@
     padding: 20px;
     background-color: #D32323;
     border-radius: 5px;
+}
+
+.Searching_for_property{
+    margin-top: 193px;
+}
+
+.heading{
+    font-weight: 900;
+    font-size: 36px;
+    color: #000000E5;
+    margin-bottom: 8px;
+}
+
+.sub_heading{
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000E5;
+}
+
+.Searching_for_property_text_container{
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.line{
+    width: 55px;
+    height: 3px;
+    background-color: #D32323;
+    margin: 16px auto 0px;
+    border-radius: 5px;
+}
+
+.Searching_for_property_img_container{
+    display: flex;
+    margin: auto;
+    justify-self: center;
+    gap: 15px;
+}
+
+.selfcon_and_flats{
+    display: flex;
+    gap: 15px;
+}
+
+.selfcontain{
+    background-image: url(./images/self_contain.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 226px;
+    width: 267px;
+    position: relative;
+}
+
+.flats{
+    background-image: url(./images/flats.png);
+    background-repeat: no-repeat;    
+    background-size: cover;
+    width: 267px;
+    height: 226px;
+    position: relative;
+}
+
+.houses{
+    background-image: url(./images/houses.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 549px;
+    height: 246px;
+    position: relative;
+}
+
+.apartments{
+    background-image: url(./images/apartment.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 470px;
+    height: 485px;
+    position: relative;
+}
+
+.selfcon_flats_houses{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.selfcontain_text h2{
+    font-weight: 900;
+    font-size: 24px;
+    color: #FFFFFF;
+}
+
+.selfcontain_text p{
+    margin-top: 13px;
+    background-color: #D32323;
+    padding: 5px 28px;
+    color: #FFFFFF;
+    width: fit-content;
+}
+
+.selfcontain_text{
+    position: relative;
+    z-index: 20;
+    height: 226px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
