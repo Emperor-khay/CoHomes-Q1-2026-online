@@ -1,25 +1,165 @@
-<!DOCTYPE html>
-<html>
-<head>
-<style>
-div.relative {  
-position: static;
-  left: 30px;
-  border: 3px solid #73AD21;
-}
-</style>
-</head>
-<body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CoHomes With Tailwind CSS</title>
 
-<h2>Using position: relative;</h2>
+    <!-- Tailwind CDN -->
+     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-<p>An element with position: relative; is positioned relative to its normal position:</p>
+  </head>
 
-<div class="relative">
-This div element has position: relative;
-</div>
+  <body>
+    <div class="fake-body">
+      <!-- Overlay -->
+      <div class="overlay"></div>
 
-</body>
+      <!-- Navigation menu -->
+      <nav class="bg-[#D32323] flex justify-between items-center ml-[57px] mr-[57px] pt-[15px] z-[20] relative">
+        <div class="w-fit text-center">
+          <img
+            src="./images/coHomes_logo.png"
+            alt="CoHomes Logo"
+            class="logo_image w-[53px] h-[58px]"
+          />
+          <p class="logo_text test-white font-black text-lg">
+            <span>co</span>
+            Homes
+          </p>
+        </div>
+
+        <div class="nav_links">
+          <p>
+            <a href="">Home</a>
+          </p>
+          <p>
+            <a href="">Properties</a>
+          </p>
+          <p>
+            <a href="">Find Roommate</a>
+          </p>
+          <p>
+            <a href="">Explore</a>
+          </p>
+          <p>
+            <a href="">Blog</a>
+          </p>
+        </div>
+
+        <div class="action_buttons">
+          <span class="login"><a href="">Login</a></span>
+          <span class="register"><a href="">Register</a></span>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <div class="hero">
+        <p class="hero_text">
+          Elegant Villa In <br />
+          Wuse 2
+        </p>
+        <p class="hero_sub_text">3 BD | 3 BA</p>
+        <div class="hero_img_container">
+          <img src="./images/hero_img_1.png" alt="" />
+          <img src="./images/hero_img_2.png" alt="" />
+          <img src="./images/hero_img_3.png" alt="" />
+        </div>
+      </div>
+
+      <!-- Rent, Buy and Roommate -->
+      <div>
+        <div class="r-b-r">
+          <p class="rent">Rent</p>
+          <p class="buy">Buy</p>
+          <p class="roommate">Roommate</p>
+        </div>
+        <div class="quick_search">
+          <div>
+            <p class="search_heading">
+              Location <img src="./images/icons/down_arrow.svg" alt="" />
+            </p>
+            <p class="search_option">Abuja</p>
+          </div>
+          <div>
+            <p class="search_heading">
+              Property Type <img src="./images/icons/down_arrow.svg" alt="" />
+            </p>
+            <p class="search_option">Condo</p>
+          </div>
+          <div>
+            <p class="search_heading">
+              Bedrooom <img src="./images/icons/down_arrow.svg" alt="" />
+            </p>
+            <p class="search_option">2</p>
+          </div>
+          <div>
+            <p class="search_heading">
+              Max Price <img src="./images/icons/down_arrow.svg" alt="" />
+            </p>
+            <p class="search_option">
+              <img src="./images/icons/naira_sign.svg" alt="" /> 250,000
+            </p>
+          </div>
+          <span>
+            <img src="./images/icons/search.svg" class="search" alt="" />
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="Searching_for_property">
+      <div class="Searching_for_property_text_container">
+        <h1 class="heading">Searching for a property?</h1>
+        <p class="sub_heading">
+          CoHomes is committed to helping you find your dream home
+        </p>
+        <div class="line"></div>
+      </div>
+
+      <div class="Searching_for_property_img_container">
+        <!-- Selfcon, Flats and Houses -->
+        <div class="selfcon_flats_houses">
+          <!-- Selfcon and Flats -->
+          <div class="selfcon_and_flats">
+            <!-- self contain -->
+            <div class="selfcontain">
+              <div class="overlay"></div>
+              <div class="selfcontain_text">
+                <h2>Self-Contain</h2>
+                <p>7 listings</p>
+              </div>
+            </div>
+
+            <!-- Flat -->
+            <div class="flats">
+              <div class="overlay"></div>
+              <div class="selfcontain_text">
+                <h2>Flat</h2>
+                <p>7 listings</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- houses -->
+          <div class="houses">
+            <div class="overlay"></div>
+            <div class="selfcontain_text">
+              <h2>Houses</h2>
+              <p>7 listings</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Apartment -->
+        <div class="apartments">
+          <div class="overlay"></div>
+          <div class="selfcontain_text">
+            <h2>Apartment</h2>
+            <p>7 listings</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
-
-

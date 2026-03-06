@@ -6,11 +6,13 @@
 }
 
 .navbar{
-    /* background-color: black; */
+    background-color: #D32323;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0px 57px;
+    margin-inline: 57px;
+    margin-block: 40px;
     padding-top: 15px;
     z-index: 20;
     position: relative;
@@ -33,6 +35,8 @@
     font-size: 18px;
    
 }
+
+/* Where We Stopped In Tailwind */
 
 .logo_text span{
     color: #d32323;
@@ -207,18 +211,6 @@
     border-radius: 5px;
 }
 
-.Searching_for_property_img_container{
-    display: flex;
-    margin: auto;
-    justify-self: center;
-    gap: 15px;
-}
-
-.selfcon_and_flats{
-    display: flex;
-    gap: 15px;
-}
-
 .selfcontain{
     background-image: url(./images/self_contain.png);
     background-repeat: no-repeat;
@@ -226,39 +218,6 @@
     height: 226px;
     width: 267px;
     position: relative;
-}
-
-.flats{
-    background-image: url(./images/flats.png);
-    background-repeat: no-repeat;    
-    background-size: cover;
-    width: 267px;
-    height: 226px;
-    position: relative;
-}
-
-.houses{
-    background-image: url(./images/houses.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 549px;
-    height: 246px;
-    position: relative;
-}
-
-.apartments{
-    background-image: url(./images/apartment.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 470px;
-    height: 485px;
-    position: relative;
-}
-
-.selfcon_flats_houses{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
 }
 
 .selfcontain_text h2{
@@ -283,5 +242,57 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
+
+.flats{
+    background-image: url(./images/flats.png);
+    background-repeat: no-repeat;    
+    background-size: cover;
+    width: 267px;
+    height: 226px;
+    position: relative;
+}
+
+.houses{
+    background-image: url(./images/houses.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 549px;
+    height: 246px;
+    position: relative;
+    margin-top: 15px;
+}
+
+.apartments{
+    background-image: url(./images/apartment.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 470px;
+    height: 485px;
+    position: relative;
+}
+
+.selfcon_and_flats{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.selfcon_flats_houses{
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* gap: 15px; */
+}
+
+
+/* 
+
+.Searching_for_property_img_container{
+    display: flex;
+    margin: auto;
+    justify-self: center;
+    gap: 15px;
+}
+
+
+} */
