@@ -5,62 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CoHomes With Tailwind CSS</title>
 
+    <link rel="shortcut icon" href="./images/coHomes_logo.png" type="image/x-icon">
     <!-- Tailwind CDN -->
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
   </head>
 
   <body>
-    <div class="fake-body">
+    <div class="fake-body bg-[url('./images/hero_bg.png')] bg-no-repeat bg-cover relative z-0">
       <!-- Overlay -->
-      <div class="overlay"></div>
+      <div class="overlay absolute bg-black inset-0 z-10 opacity-45"></div>
 
       <!-- Navigation menu -->
-      <nav class="bg-[#D32323] flex justify-between items-center ml-[57px] mr-[57px] pt-[15px] z-[20] relative">
+      <nav class="flex justify-between items-center ml-[57px] mr-[57px] pt-[15px] z-[20] relative">
         <div class="w-fit text-center">
           <img
             src="./images/coHomes_logo.png"
             alt="CoHomes Logo"
             class="logo_image w-[53px] h-[58px]"
           />
-          <p class="logo_text test-white font-black text-lg">
-            <span>co</span>
+          <p class="logo_text text-white font-black text-lg">
+            <span class="text-[#d32323]">co</span>
             Homes
           </p>
         </div>
 
-        <div class="nav_links">
+        <div class="nav_links flex font-bold text-base gap-[26px]">
           <p>
-            <a href="">Home</a>
+            <a class="text-white" href="">Home</a>
           </p>
           <p>
-            <a href="">Properties</a>
+            <a class="text-white" href="">Properties</a>
           </p>
           <p>
-            <a href="">Find Roommate</a>
+            <a class="text-white" href="">Find Roommate</a>
           </p>
           <p>
-            <a href="">Explore</a>
+            <a class="text-white" href="">Explore</a>
           </p>
           <p>
-            <a href="">Blog</a>
+            <a class="text-white" href="">Blog</a>
           </p>
         </div>
 
-        <div class="action_buttons">
-          <span class="login"><a href="">Login</a></span>
-          <span class="register"><a href="">Register</a></span>
+        <div class="action_buttons flex gap-[25px]">
+          <span class="login"><a class="text-white rounded-[5px] border border-white py-[9px] px-[33px]" href="">Login</a></span>
+          <span class="register"><a class="text-white rounded-[5px] bg-[#d32323] py-[10px] px-[23px]" href="">Register</a></span>
         </div>
       </nav>
 
       <!-- Hero Section -->
-      <div class="hero">
-        <p class="hero_text">
+      <div class="hero mt-[110px] ml-[57px] relative z-20">
+        <p class="hero_text font-bold text-[40px] text-[#ffffff]">
           Elegant Villa In <br />
           Wuse 2
         </p>
-        <p class="hero_sub_text">3 BD | 3 BA</p>
-        <div class="hero_img_container">
+        <p class="hero_sub_text font-bold text-lg text-[#ffffff]">3 BD | 3 BA</p>
+        <div class="hero_img_container w-[87px] h-[90px] mx-[10px]">
           <img src="./images/hero_img_1.png" alt="" />
           <img src="./images/hero_img_2.png" alt="" />
           <img src="./images/hero_img_3.png" alt="" />

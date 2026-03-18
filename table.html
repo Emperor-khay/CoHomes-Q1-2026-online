@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table, Forsm, Iframe and List</title>
+    <!-- Tailwind CDN -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+     <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        /* Extra small devices (phones, 600px and down) */
+        @media only screen and (max-width: 600px) {
+            body{
+                background-color: aqua;
+            }
+        }
+     </style>
+   
+  </head>
+  <body>
+    <table class="border w-[80%] mx-auto mt-5">
+      <thead class="bg-gray-200">
+        <th class="border">S/N</th>
+        <th class="border">Name</th>
+        <th class="border">Email</th>
+        <th class="border">Class</th>
+        <th class="border">Age</th>
+      </thead>
+      <tbody class="text-center">
+        <tr>
+          <td class="border">1</td>
+          <td class="border">djhfj</td>
+          <td class="border">kjdv</td>
+          <td class="border">opoioig</td>
+          <td class="border">3283</td>
+        </tr>
+        <tr>
+          <td class="border">2</td>
+          <td class="border">dishdjs</td>
+          <td class="border">sudivu</td>
+          <td class="border">kvj</td>
+          <td class="border">dmokkj</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <ul class="list-disc">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Javasript</li>
+    </ul>
+
+    <dl>
+      <dt>UI/UX</dt>
+      <dt>Frontend</dt>
+      <dd>HTML</dd>
+      <dd>CSS</dd>
+      <dd>Javascript</dd>
+      <dt>Backend</dt>
+    </dl>
+
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Javasript</li>
+    </ol>
+
+    <iframe
+      src="https://tailwindcss.com/docs/list-style-type"
+      name="tailwind"
+      class="w-full h-[50vh]"
+      frameborder="0"
+    ></iframe>
+
+    <a
+      href="https://tailwindcss.com/docs/list-style-type"
+      target="_self"
+      class="cursor-pointer bg-blue-500 p-2 rounded-md text-white"
+    >
+      Got to tailwind
+    </a>
+
+    <form action="" class="my-20">
+      <input
+        type="text"
+        name="username"
+        placeholder="Enter Username"
+        class="border"
+      />
+      <label for="username">Username</label>
+    </form>
+
+    <div class="bg-blue-300 p-5 space-y-3 my-10 grid grid-cols-5">
+      <p class="p-3 bg-blue-900 text-white w-fit">1</p>
+      <p class="p-3 bg-blue-900 text-white w-fit">2</p>
+      <p class="p-3 bg-blue-900 text-white w-fit">3</p>
+      <p class="p-3 bg-blue-900 text-white w-fit">4</p>
+      <p class="p-3 bg-blue-900 text-white w-fit">5</p>
+      <p class="p-3 bg-blue-900 text-white w-fit">6</p>
+      <p class="p-3 bg-blue-900 text-white w-fit">7</p>
+      <p class="p-3 bg-blue-900 text-white w-fit">8</p>
+      <p class="p-3 bg-blue-900 text-white w-fit">9</p>
+    </div>
+  </body>
+</html>

@@ -6,13 +6,11 @@
 }
 
 .navbar{
-    background-color: #D32323;
+    /* background-color: #D32323; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0px 57px;
-    margin-inline: 57px;
-    margin-block: 40px;
     padding-top: 15px;
     z-index: 20;
     position: relative;
@@ -36,8 +34,6 @@
    
 }
 
-/* Where We Stopped In Tailwind */
-
 .logo_text span{
     color: #d32323;
 }
@@ -49,14 +45,15 @@
     gap: 26px;
 }
 
+
 .nav_links a, .login a, .register a{
     color : white;
     text-decoration: none;
 }
 
-.login a{
+.login a, .menu{
     border-radius: 5px;
-    border: 1px solid white;
+    border: 1px solid rgb(255, 255, 255);
     padding: 9px 33px 9px 33px;
 }
 
@@ -112,6 +109,7 @@
     width: 87px;
     height: 90px;
     margin: 0px 10px;
+    /* margin-inline: 10px; */
 }
 
 .hero{
@@ -121,6 +119,7 @@
     z-index: 20;
 }
 
+/* Where We Stopped In Tailwind */
 .rent{
     background-color: #F6F8FA;
     padding: 25px 61px;
@@ -133,6 +132,7 @@
     background-color: #D32323;
     font-weight: 700;
     font-size: 18px;
+    color: white;
 }
 
 .roommate{
@@ -182,7 +182,7 @@
 }
 
 .Searching_for_property{
-    margin-top: 193px;
+    margin-block: 193px;
 }
 
 .heading{
@@ -278,15 +278,6 @@
     margin-bottom: 15px;
 }
 
-.selfcon_flats_houses{
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* gap: 15px; */
-}
-
-
-/* 
-
 .Searching_for_property_img_container{
     display: flex;
     margin: auto;
@@ -294,5 +285,82 @@
     gap: 15px;
 }
 
+.sidenav{
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 999;
+    inset: 0px;  
+    display: none; 
+}
 
-} */
+.sidenav_links{
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    margin: 20px;
+    display: block;
+    background-color: #D32323;
+}
+
+.menu{
+    display: none;
+}
+
+
+/* Media Queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .nav_links, .action_buttons{
+        display: none;
+    }
+    .navbar{
+        margin: 0px 10px;
+    }
+    .menu{
+        display: block;
+    }
+    .hero{
+        margin: 20px 10px 0px;
+    }
+    .rent, .buy, .roommate{
+        padding: 20px;
+    }
+    .quick_search{
+        flex-direction: column;
+        width: 100%;
+        padding-inline: 10px;
+        text-align: center;
+    }
+    .quick_search div, .quick_search span{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .quick_search span{
+        background-color: #D32323;
+        border-radius: 10px;
+    }
+    .Searching_for_property_img_container{
+        flex-direction: column;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}
