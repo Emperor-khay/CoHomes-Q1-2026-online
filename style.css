@@ -280,7 +280,7 @@
 
 .Searching_for_property_img_container{
     display: flex;
-    margin: auto;
+    /* margin: auto; */
     justify-self: center;
     gap: 15px;
 }
@@ -342,12 +342,35 @@
     }
     .Searching_for_property_img_container{
         flex-direction: column;
+        justify-self: unset;
     }
+    .selfcon_and_flats{
+        flex-direction: column;
+    }
+    .selfcontain, .flats, .apartments, .houses{
+        width: 95%;
+        margin-inline: auto;
+    }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-    
+    .nav_links{
+        display: none;
+    }
+    .menu{
+        display: block;
+    }
+    .Searching_for_property_img_container{
+        flex-direction: column;
+    }
+    .apartments{
+        width: 100%;
+    }
+    .quick_search{
+        width: 90%;
+    }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
