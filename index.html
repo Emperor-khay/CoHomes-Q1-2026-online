@@ -10,31 +10,96 @@
      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>CoHomes</title>
 </head>
-<body>
-    <!-- Hero Section with background image -->
-    <div class="bg-black">
-        <!-- Desktop navigation menu -->
-        <nav class="text-white flex items-center justify-around mt-[15px]">
-            <!-- Cohomes Logo -->
-            <div>
-                <img src="./images/coHomes_logo.png" alt="">
-            </div>
-
-            <!-- Navigation links -->
-            <div class="navlinks flex gap-[26px]">
-                <a href="">Home</a>
-                <a href="">Properties</a>
-                <a href="">Find Roommate</a>
-                <a href="">Explore</a>
-                <a href="">Blog</a>
-            </div>
-
-            <!-- action buttons -->
-             <div class="action flex gap-[25px]">
-                <a href="">Login</a>
-                <a href="">Register</a>
+<body class="bg-black">
+    <!-- Fake body -->
+    <section class="relative">
+        <!-- overlay -->
+        <div class="absolute bg-[#00000073] inset-0 z-[19]"></div>
+        <!-- Hero Section with background image -->
+        <div class="bg-no-repeat bg-cover h-[576px]" style="background-image: url('./images/hero_bg.png');">
+            <!-- Desktop navigation menu -->
+            <nav class="text-white flex items-center justify-around pt-[15px] z-[20] relative">
+                <!-- Cohomes Logo -->
+                <div>
+                    <img src="./images/coHomes_logo.png" alt="">
+                </div>
+    
+                <!-- Navigation links -->
+                <div class="navlinks flex gap-[26px]">
+                    <a href="" class="font-bold text-[16px]">Home</a>
+                    <a href="" class="font-bold text-[16px]">Properties</a>
+                    <a href="" class="font-bold text-[16px]">Find Roommate</a>
+                    <a href="" class="font-bold text-[16px]">Explore</a>
+                    <a href="" class="font-bold text-[16px]">Blog</a>
+                </div>
+    
+                <!-- action buttons -->
+                 <div class="action flex gap-[25px]">
+                    <a href="" class="px-[33px] py-[10px] border border-white rounded-[5px]">Login</a>
+                    <a href="" class="px-[23px] py-[10px] bg-[#D32323] rounded-[5px]">Register</a>
+                 </div>
+            </nav>
+    
+            <!-- Hero Section -->
+             <div class="text-white font-bold ml-[57px] mt-[110px] z-[20] relative">
+                <h1 class="text-[40px] ">Elegant Villa In <br>Wuse 2 </h1>
+                <p class="text-[18px]">3 BD  |  3 BA </p>
+                <div class="flex gap-[21px] mt-[25px]">
+                    <img src="./images/hero_img_1.png" alt="">
+                    <img src="./images/hero_img_2.png" alt="">
+                    <img src="./images/hero_img_3.png" alt="">
+                </div>
              </div>
-        </nav>
-    </div>    
+    
+             <!-- Extra Hero Content -->
+             <div class="w-[100%] z-[20] absolute bottom-[-101px]">
+                <!-- Rent,Buy,Roommate -->
+                 
+                <!-- using width and height -->
+                 <!-- <div class="flex">
+                    <p class="bg-[#F6F8FA] flex justify-center items-center w-[160px] h-[70px]">Rent</p>
+                    <p class="bg-[#D32323] flex justify-center items-center text-white w-[160px] h-[70px]">Buy</p>
+                    <p class="bg-[#F6F8FA] flex justify-center items-center w-[160px] h-[70px]" >Roommate</p>
+                 </div> -->
+                 <!-- using padding -->
+                 <div class="flex justify-self-center">
+                    <p class="bg-[#F6F8FA] pt-[28px] pb-[20px] px-[61px]">Rent</p>
+                    <p class="bg-[#D32323] text-white pt-[28px] pb-[20px] px-[64px]">Buy</p>
+                    <p class="bg-[#F6F8FA] pt-[28px] pb-[20px] px-[36px]">Roommate</p>
+                 </div>
+    
+                 <!-- Quick Search -->
+                 <div class="bg-white flex justify-around pt-[39px] pb-[31px] rounded-[10px] w-[80%] justify-self-center">
+                    <div>
+                        <p class="flex gap-[9px]">Location <img src="./icons/down_arrow.svg" alt=""></p>
+                        <p>Abuja</p>
+                    </div>
+                    <div>
+                        <p class="flex gap-[9px]">Property Type  <img src="./icons/down_arrow.svg" alt=""></p>
+                        <p>Condo</p>
+                    </div>
+                    <div>
+                        <p class="flex gap-[9px]">Bedroom <img src="./icons/down_arrow.svg" alt=""></p>
+                        <p>2</p>
+                    </div>
+                    <div>
+                        <p class="flex gap-[9px]">Max Price <img src="./icons/down_arrow.svg" alt=""></p>
+                        <p>&#8358; 250,000</p>
+                    </div>
+                    <div>
+                        <!-- using width and height -->
+                        <!-- <p class="bg-[#D32323] size-[57px] flex justify-center items-center rounded-[5px]">
+                            <img src="./icons/search.svg" alt="">
+                        </p> -->
+                    
+                        <!-- using padding -->
+                        <p class="bg-[#D32323] pt-[21px] pb-[18px] pl-[20px] pr-[19px] rounded-[5px]">
+                            <img src="./icons/search.svg" alt="">
+                        </p>
+                    </div>
+                 </div>
+             </div>
+        </div>    
+    </section>
 </body>
 </html>
