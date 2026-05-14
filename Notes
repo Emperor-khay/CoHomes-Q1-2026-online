@@ -1,0 +1,50 @@
+
+1. Variables
+- Variable scope: In which area is this variable accessible 		
+
+2. Data types:
+String "" - normal text. e.g "389274937"
+integer - number. e.g 1,3,4.6,-2,
+boolean - Data that has two values
+Array []:
+	numbers = [1,4,5,7,2,5], 
+	fruits = ["Banana", "apple", "orange"]
+object {}:
+
+3. Operators:
+	Arithemetic e.g +,-,*,/
+	Comparison e.g <,>,==,===,<=,>=
+	Logical e.g AND (&&),OR (||),NOT (!)
+
+name = Obi
+age = 12
+
+	F		F
+(name == Uche AND age == 14)  = false
+
+() = false
+
+4. functions ():
+
+5. Conditional statement
+
+6. Loops:
+(Starting point, Ending point/condition, step/increment)
+	For loop
+	While loop
+	do while
+
+JavaScript output method
+1. window.alert used to print output on alert window
+2. console.log used to print output on console
+3. innerHTML used to edit html content or create new html element structure
+4. innerText used to edit html content
+
+Modal
+Code block
+
+Parameter of a function is a variable defined in the bracket when creating a function.
+
+Argument is the value of a parameter
+
+Function scoped variable
