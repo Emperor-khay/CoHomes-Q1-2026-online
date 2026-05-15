@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <title>Javascript Form validation</title>
+</head>
+<body>
+    <div>
+        <form onsubmit="return validateForm()" class=" w-full m-3 md:w-[50%] md:mx-auto bg-gray-300 my-[50px] p-[20px] flex flex-col gap-[30px] rounded-md">
+            <div>
+                <label for="firstname">First Name:</label>
+                <input class="border" type="text" name="firstname" id="firstname" placeholder="Enter First Name">
+            </div>
+
+            <div>
+                <label for="lastname">Last Name:</label>
+                <input class="border" type="text" name="lastname" id="lastname" placeholder="Enter Last Name">
+            </div>
+
+            <div>
+                <label for="email">Email:</label>
+                <input class="border" type="email" name="email" id="email" placeholder="Enter Email">
+            </div>
+
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input class="border" type="text" name="phone" id="phone" placeholder="Enter Phone Number">
+            </div>
+
+            <div>
+                <label for="age">Age:</label>
+                <input class="border" type="number" name="age" id="age" placeholder="Enter Age">
+            </div>
+
+            <div>
+                <label for="password">Password:</label>
+                <input class="border" type="password" name="password" id="password" placeholder="Enter Password">
+            </div>
+
+            <div>
+                <label for="cofirm_password">Confirm Password:</label>
+                <input class="border" type="password" name="cofirm_password" id="cofirm_password" placeholder="Confirm Password">
+            </div>
+
+        <input type="submit" class="bg-white hover:bg-black hover:text-white " value="Submit">
+        </form>
+    </div>    
+
+    <script>
+        let FirstnameInput = document.getElementById('firstname');
+        let LastnameInput = document.getElementById('lastname');
+        let EmailInput = document.getElementById('email');
+        let PhoneNumberInput = document.getElementById('phone');
+        let AgeInput = document.getElementById('age');
+        let PasswordInput = document.getElementById('password');
+        let ConfirmPasswordInput = document.getElementById('confirm_password');
+
+        function validateForm(){
+            validateFirstName();
+            return false;
+        }
+
+        function validateFirstName(){
+            // Check if first name is empty
+            if(FirstnameInput.value == ""){
+                window.alert("First Name cannot be empty")
+            }
+
+            // Check if first name has more than 50 characters
+            if(FirstnameInput.value.length > 50){
+                window.alert
+            }
+            console.log(FirstnameInput.value.length);
+            console.log(FirstnameInput.value);
+
+        }
+
+    </script>
+</body>
+</html>

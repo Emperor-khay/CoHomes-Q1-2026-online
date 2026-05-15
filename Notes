@@ -19,7 +19,7 @@ object {}:
 name = Obi
 age = 12
 
-	F		F
+	F					F
 (name == Uche AND age == 14)  = false
 
 () = false
